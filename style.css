@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+h1{
+    font-weight:900;
+}
+
+p{
+    font-weight:lighter;
+    font-size: 20px;
+}
+
+body{
+    background-color: rgb(24, 24, 24);
+    color: aliceblue;
+}
+
+#header{
+    width: 100%;
+    height: 80vh;
+    background-image:url(images/cover-portfolio.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+    margin-top: 30px;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    margin-top: 40px;
+
+}
+
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    
+    
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #7e00ff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #7e00ff;
+}
+
+/*--------------sobre------------*/
+#sobre{
+    padding: 80px 0px;
+    color:rgb(255, 255, 255);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sobre-col-1{
+    flex-basis: 35%;
+}
+
+.sobre-col-1 img{
+    width: 100%;
+}
+
+.sobre-col-2{
+    flex-basis: 60%;
+}
+
+.p-sobre{
+    font-size: 20px;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 30px 0 10px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight:bold;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#7e00ff;
+    position: absolute;
+    left:0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin-right: 20px;
+    display: flex;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+
+.tab-contents ul li span{
+    font-weight: bold;
+    font: 600;
+    color: #8000ff;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*--------------portfolio------------*/
+
+#portfolio{
+    padding: 30px 0px;
+}
+
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #7e00ff;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background: #7e00ff;
+}
+
+/*--------------Contato------------*/
+
+#contato{
+    margin-bottom: 0px;
+}
+
+.contato-left{
+    flex-basis: 35%;
+}
+
+.contato-right{
+    flex-basis: 0%;
+}
+
+.contato-right img{
+    width: 300px;
+}
+
+.contato-left p{
+    margin-top: 30px;
+}
+
+.contato-left p i{
+    color: #7e00ff;
+    display: flex;
+    justify-content:space-between;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 32px;
+    margin-right:  15px;
+    color: #eeeeee;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-icons a:hover{
+    color: #7e00ff;
+    transform: translateY(-5px)
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #3b3b3b;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+
+nav .fa-solid{
+    display: none;
+}

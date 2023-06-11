@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;600;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f12996b1b1.js" crossorigin="anonymous"></script>
+    <title>Portfólio Gio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer | Diretor de Arte</p>
+                <h1>Olá, sou o <br/><span>Giovanni</span></h1>
+            </div>
+        </div>
+    </div>
+<!------------sobre------------->
+    <div id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="sobre-col-1">
+                    <img src="images/sobre-foto.png" alt="foto-sobre">
+                </div>
+                <div class="sobre-col-2">
+                    <h1>Sobre mim</h1>
+                    <p class="p-sobre">Formado em publidade e propaganda, 6 anos de experiência como diretor de arte,
+                        marketing de influência, varejo, campanhas on e offline,
+                        identidades visuais, desdobramentos de KV’s prototipação de sites,
+                        materiais educacionais, contas comerciais dos ramos de cosméticos,
+                        gastronômico e gamer. Estudando Análise e Desenvolvimento de Sistemas,
+                        focando no desenvolvimento web, Front-End e prototipação.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('xp')">Experiência</p>
+                            <p class="tab-links"onclick="openTab('educa')">Educação</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>
+                                    <img src="images/photoshop.png" alt="photoshop-icon">
+                                </li>
+                                <li>
+                                    <img src="images/illustrator.png" alt="illustrator-icon">
+                                </li>
+                                <li>
+                                    <img src="images/indesign.png" alt="indesign-icon">
+                                </li>
+                                <li>
+                                    <img src="images/premiere.png" alt="premiere-icon">
+                                </li>
+                                <li>
+                                    <img src="images/cib_adobe-after-effects.png" alt="after-icon">
+                                </li>
+                                <li>
+                                    <img src="images/html-fill.png" alt="html-icon">
+                                </li>
+                                <li>
+                                    <img src="images/css.png" alt="css-icon">
+                                </li>
+                                <li>
+                                    <img src="images/JS.png" alt="js-icon">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="xp">
+                            <ul>
+                                <li><span>Diretor de Arte</span><br>TFTW Gaming Influencers<br>abr/2022 - mai/2023</li>       
+                            </ul>
+                            <ul>
+                                <li><span>Diretor de Arte</span><br>Louder Influencers<br>abr/2019 - abr/2022</li>       
+                            </ul>
+                            <ul>
+                                <li><span>Criação Publicitária</span><br>atta! - Publicidade e Propaganda<br>ago/2016 - abr/2019</li>       
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="educa">
+                            <ul>
+                                <li><span>FIAP</span><br>Análise e Desenvolvimento de Sistemas<br>fev/2023 - dez/2024</li>       
+                            </ul>
+                            <ul>
+                                <li><span>Universidade Metodista de São Paulo</span><br>Publicidade e Propaganda<br>fev/2014 - dez/2017</li>       
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------Portfolio------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="portfolio-list">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/portfolio/CAPA-Luma.png" alt="Primeiro Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="images/portfolio/acxsneaker.png" alt="Segundo Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="images/portfolio/template-brtt-media-kit-behance_01.png" alt="Terceiro Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="images/portfolio/advocacia.png" alt="Quarto Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="images/portfolio/behance-kamikat_01.png" alt="Quinto Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="images/portfolio/figmaui.png" alt="Sexto Slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="images/portfolio/behance-babs_01.png" alt="Setimo Slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>
+            <a href="https://www.behance.net/giovannicampos" target="_blank" class="btn">Veja mais</a>
+        </div>
+    </div>
+<!------------Contato------------->
+    <div id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="contato-left">
+                    <h1 class="sub-title">Contato</h1>
+                    <p><i class="fa-regular fa-envelope"></i>giocampost@gmail.com</p>
+                    <p><i class="fa-brands fa-whatsapp"></i>+55 (11) 967214050</p>
+                    <div class="social-icons">
+                        <a href="https://www.behance.net/giovannicampos" target="_blank"><i class="fa-brands fa-square-behance"></i></a>
+                        <a href="https://github.com/GiovanniTatiyama" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/giovanni-campos-tatiyama/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/gio.tatiyama/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contato-right">
+                    <img src="images/cafe.png" alt="cafeimg">
+                </div>
+            </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Giovanni de Campos Tatiyama.<br>Made by myself</p>
+    </div>
+</body>
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>
+
