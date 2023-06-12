@@ -40,9 +40,7 @@
         font-size: 20px;
     }
 
-    #sobre{
-        padding: 30px
-    }
+
 
     .row{
         display: flex;
@@ -62,6 +60,7 @@
     
     .sobre-col-2{
         flex-basis: 100%;
+        padding: 10px;
 
     }
 
